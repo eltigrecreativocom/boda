@@ -31,7 +31,8 @@
 .container {
     max-width: 450px;
     margin: 0 auto;
-    padding: 15px;
+    /* padding: 15px; */
+    background-image: url(base/textura.jpg);
 }
 
 
@@ -492,4 +493,13 @@ p {
 
 .asistencia img {
     width: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: #1a568a;
 }
