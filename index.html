@@ -323,6 +323,23 @@
         window.addEventListener('scroll', animarBarraTiempo);
         window.addEventListener('load', animarBarraTiempo);
     </script>
+    <script>
+        // Seleccionamos el primer section (la tarjeta)
+        const tarjeta = document.querySelector('.fondo1.section1');
+
+        tarjeta.style.cursor = 'pointer'; // Para que salga la manito
+
+        tarjeta.addEventListener('click', () => {
+            const siguienteSection = tarjeta.nextElementSibling;
+            if (siguienteSection) {
+                siguienteSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    </script>
+
 </body>
 
 </html>
