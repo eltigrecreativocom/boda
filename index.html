@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de XV Años - Briahna Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Elementos decorativos -->
+        <section class="fondo1 section1">
+            <p>Nuestra Boda</p>
+            <h1 class="titulo"> Julieta y David</h1>
+            <p class="fecha"> 8 de octubre</p>
+            <img src="base/carta.png" alt="" style="width: 150px; margin-top: 10px;margin:auto">
+            <p>Click para abrir la invitación</p>
+
+
+
+        </section>
+        <!-- Contenido principal -->
+
+        <section class="section1 bg1" style="min-height: 450px;    padding-top: 50px;">
+            <h4 style="max-width: 300px;margin-top:80px;
+    text-align: center;">El hombre que halla esposa encuentra un tesoro, y recibe el favor del Señor.
+                <br>Proverbios 18:22
+            </h4>
+            <h1 class="titulo">J & D</h1>
+            <p>Nos casamos</p>
+
+        </section>
+        <img src="base/2.png" alt="" style="width: 100%;
+    margin-top: -85px;
+    margin-bottom: -131px;
+    z-index: -1;
+    position: relative;">
+
+        <!-- Contenido segundo -->
+        <section class="section1 bg1" style="padding-top: 250px;
+    padding-bottom: 100px;">
+
+            <p>Con nuestro amor, la bendición de Dios<br> y la de nuestros Padres:</p>
+            <p>Nosotros</p>
+            <h1 class="titulo"> Julieta y David</h1>
+
+            <p> Tenemos el honor de invitarte a <br> celebrar nuestra unión en matrimonio.</p>
+
+            <div class="audio-player" id="audioPlayerContainer">
+                <p data-i18n="press_heart">Presiona el ❤ para Nuestra canción</p>
+
+                <button class="play-btn" id="playBtn">
+                    <i class="fas fa-heart"></i>
+                </button>
+                <span class="song-title" data-i18n="song_title">wave to earth - love.</span>
+            </div>
+
+            <div class="contador">
+                <h4 id="contador-texto" style="text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Great Vibes';">¡Solo faltan!</h4>
+                <div class="tiempo">
+                    <div class="unidad">
+                        <div class="numero" id="dias">00</div>
+                        <div class="etiqueta" data-i18n="days">Días</div>
+                    </div>
+                    <div class="unidad">
+                        <div class="numero" id="horas">00</div>
+                        <div class="etiqueta" data-i18n="hours">Horas</div>
+                    </div>
+                    <div class="unidad">
+                        <div class="numero" id="minutos">00</div>
+                        <div class="etiqueta" data-i18n="minutes">Minutos</div>
+                    </div>
+                    <div class="unidad">
+                        <div class="numero" id="segundos">00</div>
+                        <div class="etiqueta" data-i18n="seconds">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <img src="base/3.png" alt="" style="width: 100%;margin-top: -140px;">
+
+        <section class="section1 lugares bg0" style="margin-top: -100px;">
+            <article>
+                <img src="iglesia.svg" alt="">
+                <h4>1:30 pm. <BR>CEREMONIA</h4>
+                <p>Alameda don Santiago 101 chorrillos</p>
+                <a href="https://www.google.com/maps/place/Alameda+Don+Santiago,+Chorrillos+15067/@-12.2041632,-76.9985112,887m/data=!3m2!1e3!4b1!4m6!3m5!1s0x9105b9e58895bded:0xffab2017057b32c5!8m2!3d-12.2041632!4d-76.9985112!16s%2Fg%2F11k566_r8j?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"
+                    class="boton1">ver ubicación</a>
+            </article>
+            <!--article>
+                <img src="copas.svg" alt="">
+                <h4>18:30 HRS. <BR>CEREMONIA</h4>
+                <p>IGLESIA XXXXXX</p>
+                <a href="#" class="boton1">ver ubicación</a>
+            </article-->
+        </section>
+
+
+        <section id="itinerario-section " class="visible fondo1"
+            style="min-height: 400px; padding-bottom: 40px;padding-top: 80px;">
+
+            <h4 style="text-align: center">Itinerario del Evento</h4>
+            <br>
+            <div class="timeline-container">
+                <div class="timeline-bar">
+                    <div class="timeline-fill" id="timelineFill" style="height: 20%;"></div>
+                </div>
+                <div class="timeline">
+                    <div class="evento visible">
+                        <img src="ceremonia.svg" alt="">
+                        <div class="info">
+                            <h5>Ceremonia <br>1:30 pm</h5>
+                        </div>
+                    </div>
+
+                    <div class="evento visible">
+                        <img src="recepcion.svg" alt="">
+                        <div class="info">
+                            <h5>Recepción <br>3:00 pm</h5>
+                        </div>
+                    </div>
+                    <div class="evento visible">
+                        <img src="cena.svg" alt="">
+                        <div class="info">
+                            <h5>Cena <br>4:00 pm</h5>
+                        </div>
+                    </div>
+                    <div class="evento">
+                        <img src="fiesta.svg" alt="">
+                        <div class="info">
+                            <h5>Fiesta <br>5:00 pm</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="base/5.png" alt="" style="width: 100%;margin-top: -140px;">
+        <section class="section1 bg1" style="    margin-top: -100px;
+    position: relative;">
+            <h3>CÓDIGO DE VESTIMENTA</h3>
+            <article class="vestimenta">
+                <p>Etiqueta</p>
+                <img src="vestimenta.svg" alt="" style="    width: 86px;">
+                <p>Damas: Vestido largo(no blanco)</p>
+                <p>Caballeros: Traje Formal</p>
+            </article>
+        </section>
+
+        <section class="section1 asistencia "
+            style="padding-bottom: 80px; padding-top: 80px;background-image: url('base/1.png');background-size: contain;">
+            <article>
+                <img src="wsp.svg" alt="">
+                <h3>CONFIRMACIÓN DE ASISTENCIA</h3>
+                <p>Te agradeceremos confirmar tu asistencia antes del 8 de Septiembre de 2025</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="wa.me/912144379" class="boton1">Contacto</a>
+
+                </div>
+            </article>
+
+            <article>
+                <h3>SIN NIÑOS</h3>
+                <p>Este evento es solo para adultos. Agradecemos tu comprensión.</p>
+            </article>
+
+            <article>
+                <h3>Sugerencia de regalos</h3>
+                <p>Tu presencia es el mejor regalo que podemos recibir. Sin embargo, si deseas obsequiarnos algo
+                    especial, hemos creado una lista de regalos en: <b>noviosfalabella</b></p>
+                <a href="https://www.noviosfalabella.com.pe/public/resultadoBusquedaNovios.do?radTipoBusqueda=1&valorSelectOrdenamiento=fecha&txtBusqueda=721702-01"
+                    class="boton1">ver más</a>
+                <p>Codigo de novios 721702-01</p>
+
+                <br>
+                <br>
+                <p>Mi cuenta BBVA: <br>
+                    0011-0151-0100054924<br>
+                    CCI: 01115100010005492484</p>
+            </article>
+
+            <article>
+                Esperamos contar con tu presencia en este día tan especial para nosotros.
+                <p>Con cariño,</p>
+                <h1 style="
+    font-family: 'Great Vibes';
+    margin-top: 20px;
+">Julieta &amp; David</h1>
+                <h4 style="
+    font-family: 'Great Vibes';
+    margin-top: 20px;
+    font-size: 19px;
+">Muchas gracias!</h4>
+            </article>
+        </section>
+        <img src="base/6.png" alt="">
+
+
+
+
+    </div>
+
+    <audio id="audioPlayer" loop>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Traducciones personalizadas
+
+
+        // Función para cambiar idioma
+
+
+        // Event listeners para botones de idioma
+
+        // Inicializar con español
+
+        // El resto de tu código JavaScript existente
+        // Contador regresivo
+        const fechaEvento = new Date('October 8, 2025 13:00:00').getTime();
+
+        const actualizarContador = () => {
+            const ahora = new Date().getTime();
+            const diferencia = fechaEvento - ahora;
+
+            if (diferencia > 0) {
+                const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+                document.getElementById('dias').innerText = dias.toString().padStart(2, '0');
+                document.getElementById('horas').innerText = horas.toString().padStart(2, '0');
+                document.getElementById('minutos').innerText = minutos.toString().padStart(2, '0');
+                document.getElementById('segundos').innerText = segundos.toString().padStart(2, '0');
+            } else {
+                document.getElementById('contador-texto').innerText = "¡El evento ya comenzó!";
+                document.querySelector('.tiempo').style.display = 'none';
+            }
+        };
+
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
+
+        // Reproductor de música
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playBtn = document.getElementById('playBtn');
+        const audioPlayerContainer = document.getElementById('audioPlayerContainer');
+        let isPlaying = false;
+
+        // Mostrar el reproductor después de un retraso
+        setTimeout(() => {
+            audioPlayerContainer.classList.add('visible');
+        }, 3000);
+
+        playBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                audioPlayer.pause();
+                playBtn.innerHTML = '<i class="fas fa-heart"></i>';
+            } else {
+                audioPlayer.play().catch(e => {
+                    console.log("La reproducción automática fue bloqueada. Haga clic para iniciar.");
+                });
+                playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Formulario de confirmación
+        function animarBarraTiempo() {
+            const eventos = document.querySelectorAll('.evento');
+            const barraFill = document.getElementById('timelineFill');
+            const alturaTotal = document.querySelector('.timeline').offsetHeight;
+            const alturaVentana = window.innerHeight;
+
+            eventos.forEach((evento, index) => {
+                const posicion = evento.getBoundingClientRect().top;
+                if (posicion < alturaVentana * 0.8) {
+                    evento.classList.add('visible');
+
+                    // Calcular progreso para la barra de tiempo
+                    const progreso = (index + 1) / eventos.length;
+                    barraFill.style.height = `${progreso * 100}%`;
+                }
+            });
+        }
+
+        // Observador de intersección para animaciones
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Animación especial para la sección de tiempo
+                    if (entry.target.id === 'itinerario-section') {
+                        animarBarraTiempo();
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Observar todas las secciones
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+
+        // Llamar a la animación de la barra de tiempo al cargar y al hacer scroll
+        window.addEventListener('scroll', animarBarraTiempo);
+        window.addEventListener('load', animarBarraTiempo);
+    </script>
+</body>
+
+</html>
