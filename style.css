@@ -447,7 +447,7 @@ p {
         left: 30px !important;
         margin-left: 0;
         display: grid;
-        grid-template-columns: 60px 1fr;
+        grid-template-columns: 1fr 2fr;
         align-items: center;
         gap: 10px;
     }
